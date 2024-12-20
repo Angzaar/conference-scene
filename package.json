@@ -1,14 +1,18 @@
 {
   "name": "dcl-project",
-  "version": "1.0.0",
   "description": "SDK7 Template scene",
-  "scripts": {
-    "start": "sdk-commands start",
-    "start-web3": "sdk-commands start --web3",
-    "deploy": "sdk-commands deploy",
-    "build": "sdk-commands build",
-    "upgrade-sdk": "npm install --save-dev @dcl/sdk@latest",
-    "upgrade-sdk:next": "npm install --save-dev @dcl/sdk@next"
+  "version": "1.0.0",
+  "bundleDependencies": [
+    "eth-connect"
+  ],
+  "dependencies": {
+    "@dcl-sdk/utils": "latest",
+    "colyseus.js": "^0.15.26",
+    "core-js": "^3.31.0",
+    "dcl-crypto-toolkit": "^1.0.0-20231102170834.commit-63c4be6",
+    "dcl-npc-toolkit": "^1.5.0",
+    "eth-connect": "^6.2.1",
+    "mitt": "^3.0.1"
   },
   "devDependencies": {
     "@dcl/js-runtime": "7.6.7",
@@ -24,16 +28,12 @@
     "printWidth": 120,
     "trailingComma": "none"
   },
-  "dependencies": {
-    "@dcl-sdk/utils": "latest",
-    "colyseus.js": "^0.15.26",
-    "core-js": "^3.31.0",
-    "dcl-crypto-toolkit": "^1.0.0-20231102170834.commit-63c4be6",
-    "dcl-npc-toolkit": "^1.5.0",
-    "eth-connect": "^6.2.1",
-    "mitt": "^3.0.1"
-  },
-  "bundleDependencies": [
-    "eth-connect"
-  ]
+  "scripts": {
+    "build": "sdk-commands build",
+    "deploy": "sdk-commands deploy",
+    "start": "sdk-commands start",
+    "start-web3": "sdk-commands start --web3",
+    "upgrade-sdk": "npm install --save-dev @dcl/sdk@latest",
+    "upgrade-sdk:next": "npm install --save-dev @dcl/sdk@next"
+  }
 }

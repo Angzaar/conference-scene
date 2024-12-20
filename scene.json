@@ -2,7 +2,7 @@
   "ecs7": true,
   "runtimeVersion": "7",
   "display": {
-    "title": "Angzaar Conference Center",
+    "title": "conference-scene",
     "description": "Build for DCL in DCL",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
@@ -61,9 +61,10 @@
   "requiredPermissions": [
     "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE",
     "ALLOW_TO_TRIGGER_AVATAR_EMOTE"
-    ],
+  ],
   "featureToggles": {
     "voiceChat": "enabled",
     "portableExperiences": "enabled"
-  }
+  },
+  "name": "conference-scene"
 }

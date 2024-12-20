@@ -4,7 +4,7 @@ import { connect } from "./helpers/connection"
 import { addNewReservation, clearConference, handleUpdate, handleVideoUpdate, initConference, refreshConferenceCenter, removeReservation } from "./conference"
 import { SERVER_MESSAGE_TYPES } from "./helpers/types"
 
-export let serverRoom:string = "angzaar_plaza"
+export let serverRoom:string = "angzaar_plaza_conference"
 export let localUserId: string
 export let localUser:any
 export let data:any
